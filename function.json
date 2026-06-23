@@ -1,0 +1,18 @@
+{
+  "app_name": "fn-hello",
+  "function_name": "fn-hello",
+  "memory_in_mbs": 256,
+  "timeout_in_seconds": 60,
+  "config": {
+    "GREETING": "Hello from OCI Functions"
+  },
+  "schedule": {
+    "enabled": false,
+    "cron": "0 6 * * *"
+  },
+  "tag": {
+    "ENV": "DEMO",
+    "team": "data-platform",
+    "project": "oci-functions-template"
+  }
+}

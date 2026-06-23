@@ -1,0 +1,16 @@
+# Copia este archivo a terraform.tfvars y completa con tus valores.
+# Copy this file to terraform.tfvars and fill in your values.
+
+config_file_profile = "DEFAULT"
+tenancy_ocid        = "ocid1.tenancy.oc1..xxxxx"
+compartment_ocid    = "ocid1.compartment.oc1..xxxxx"
+compartment_name    = "my-compartment"
+region              = "us-ashburn-1"
+
+# Imagen publicada con:  cd function && fn build && fn push
+# Image published with:  cd function && fn build && fn push
+function_image     = "iad.ocir.io/<namespace>/<repo>/fn-hello:0.0.1"
+
+# Subnet (en un VCN existente) para la Function Application.
+# Subnet (in an existing VCN) for the Function Application.
+function_subnet_id = "ocid1.subnet.oc1..xxxxx"
